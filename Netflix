@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      background-color: #141414;
+    }
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #141414;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+    header img {
+      width: 100px;
+    }
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    /* Featured Section */
+    .featured {
+      height: 70vh;
+      background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      color: white;
+    }
+    .featured-content {
+      max-width: 500px;
+    }
+    .featured-content h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .featured-content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .featured-content button {
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      color: white;
+      background-color: red;
+      cursor: pointer;
+    }
+    /* Movie Rows */
+    .movie-row {
+      padding: 20px;
+    }
+    .movie-row h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .movie-row .movie-list {
+      display: flex;
+      overflow-x: auto;
+    }
+    .movie-list img {
+      width: 150px;
+      margin-right: 10px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .movie-list img:hover {
+      transform: scale(1.1);
+    }
+    <!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+    <p>&copy; 2024 Simple Website. All rights reserved.</p>
+  </div>
+</footer>
+
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix Logo">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">TV Shows</a>
+    <a href="#">Movies</a>
+    <a href="#">New & Popular</a>
+    <a href="#">My List</a>
+  </nav>
+</header>
+
+<!-- Featured Section -->
+<section class="featured">
+  <div class="featured-content">
+    <h1>Featured Movie Title</h1>
+    <p>A brief description of the featured movie goes here.</p>
+    <button>Watch Now</button>
+  </div>
+</section>
+
+<!-- Movie Rows -->
+<section class="movie-row">
+  <h2>Popular on Netflix</h2>
+  <div class="movie-list">
+    <img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTMBo-0Fl-i2ffb90i3YgenaCrPgDPxYNUQwhyeeWFMdA02Uiw7m-ZXhbrmLxhSumizJc3gTLfDUzpSVRQoiN5iiT4QBatRWhXqTNaz4Gw9X68jL6_T-qsIYEfhYFPTQz60UAg.jpg?r=dc3" alt="Movie 1">
+    <img src="https://resizing.flixster.com/r5OKohwgjqXDGHUvZJRfKaCWqGg=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2EzZTQ3Mzc4LTFiMjctNDY4Yy05YWFlLTE4OGRmYjU0NWIyNy5qcGc=" alt="Movie 2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXa2stDCzkfZObokI6U_XKii2BR5JQdpdyjg&s" alt="Movie 3">
+    <img src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbmogXKZI6mEh3lk6Az-Y9v1bteYiGlbI6vc3b2rd28dQpE2-QNFq6f5r7TqPrSH4mqj45sSasmzvl-gaPrBZGADpneM6jwi7KQ.jpg?r=3c4" alt="Movie 4">
+    <img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZAUJyh74gbiRP-o8CM5rced9iqaCd5XXF2hBnLqroHmHhTdAp1Y1KfjbhxUJ3xvSB-QplYnxb-B_Dzn6E7uQ1z_xMxhFTPKYRXZ.jpg?r=033" alt="Movie 5">
+  </div>
+</section>
+
+<section class="movie-row">
+  <h2>Trending Now</h2>
+  <div class="movie-list">
+    <img src="https://preview.redd.it/crew-becomes-the-third-most-watched-mon-english-film-on-v0-n9gae1byh83d1.jpg?width=640&crop=smart&auto=webp&s=14ae260175f16f81e2638a38078e2befef08142e" alt="Movie 6">
+    <img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABcIR1y8OwW8O-QevVWLMewHQ_R8OjbZ7BdhKFgGGWOHhn8AOOttWupjQldhpBSspga20a1XCnG0Rqaoyai_N3bFzQPeHg073kdjbVQLjZgkkSFLwlbl_YoxxO6dtknzg1nMm8g.jpg?r=35c" alt="Movie 7">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtoVrIPoNsM3ZohGIykRLBRYirzfOZm8R2XA&s" alt="Movie 8">
+    <img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTpPKJaQy8Y2C1vN-h99_CAQM8D-ve9Gn8LZBft30I2ovHuR44DHGhUZcJLnLkkj9eDNU7xuO3wJsEIU9HY-VXyBmR32pKIhvYI4X0xQYKUr0eyAegXY2LWdCITvhdt0rhCXxQ.jpg?r=197" alt="Movie 9">
+    <img src="https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQb_x9BwxzirfmWBblQm8niUgkHwhnhj7PnS6f1zAJVdTtayeYpfb3K08z6-EfM0z2TnnZ4kXzlfzxeR6pwnesLoTl1G4NTCN_BYGMC-xzSbBw93N1c_57bS2cqLigM2ZZjA2xk_dyCySjpYtiMGjxijb.jpg?r=7b4" alt="Movie 10">
+  </div>
+</section>
+
+</body>
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <p>&copy; 2024 Simple Website. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+</html>
